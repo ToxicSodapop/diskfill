@@ -56,18 +56,6 @@ function onMessage (event) {
 }
 
 /**
- * Reclaim the disk space that we used.
- */
-
-var reclaim = document.querySelector('.reclaim')
-reclaim.addEventListener('click', reclaimSpace, false)
-
-function reclaimSpace (event) {
-  reclaim.disabled = 'disabled'
-  setFrame('http://' + localStorage.highest + '.filldisk.com/frame.html?reclaim=true')
-}
-
-/**
  * Injects a CSS style tag into page.
  * @param  {String} rules CSS rules to inject
  */
